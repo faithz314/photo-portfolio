@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home.js';
+import Navbar from './components/Navbar.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         
-        <header>Faith Zhang</header>
+      <Navbar></Navbar>
+       <Home></Home>
         
       </header>
     </div>
