@@ -1,10 +1,11 @@
 import React from 'react';
 
 
+
 function Home(){
     return(
         
-        <div> Home Page! </div>
+        <div> Hi! My name is Faith, and I take photos. Welcome to my portfolio page! </div>
 
     );
 }

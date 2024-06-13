@@ -1,17 +1,26 @@
 import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 
-function Navbar(){
+function Navbar(props){
+    // const [DropDown, setDropDown] = useState(false);
+
+    // const toggleDropDown = () => {
+    //     setDropDown(!DropDown);
+    // }
+
+    //CONST = var prefix!!!
+
     return(
-        <div className = "navigation">
+        <nav className = "navigation">
             <div className= "initials"> FLZ</div>
 
-            <a href= '/about'> Home </a>
+            <a href= '/about'> About </a>
             <a href= '/portfolio'> Portfolio </a>
-            <a href= '/Resume'> About </a>
+            <a href= '/home'> Home </a>
 
-        </div>
+        </nav>
         
         
     );
