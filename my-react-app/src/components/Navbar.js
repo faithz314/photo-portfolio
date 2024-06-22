@@ -1,6 +1,9 @@
 import React from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import {Router, Link, Routes, Route} from 'react-router-dom';
+import About from '../pages/About'
+import Portfolio from '../pages/Portfolio'
+import Home from '../pages/Home'
 
 
 function Navbar(props){
@@ -13,15 +16,26 @@ function Navbar(props){
     //CONST = var prefix!!!
 
     return(
+        <div>
         <nav className = "navigation">
-            <div className= "initials"> FLZ</div>
 
-            <a href= '/about'> About </a>
-            <a href= '/portfolio'> Portfolio </a>
-            <a href= '/home'> Home </a>
+            <Routes>
+                <Route path= '/home' element= {<Home/>}/>
+                <Route path= '/about' element= {<About/>}/>
+                <Route path= '/portfolio' element= {<Portfolio/>}/>
+
+            </Routes>
+
+            <div className= "initials"> FLZ</div>
+            <Link to="/home">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/portfolio">Portfolio</Link>
 
         </nav>
-        
+
+
+            
+        </div>
         
     );
 
