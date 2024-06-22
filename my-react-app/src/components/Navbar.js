@@ -16,27 +16,26 @@ function Navbar(props){
     //CONST = var prefix!!!
 
     return(
-        <div>
         <nav className = "navigation">
+
+            <div className= "initials"> FLZ</div>
 
             <Routes>
                 <Route path= '/home' element= {<Home/>}/>
-                <Route path= '/about' element= {<About/>}/>
                 <Route path= '/portfolio' element= {<Portfolio/>}/>
 
-            </Routes>
+                <Route path= '/about' element= {<About/>}/>
 
-            <div className= "initials"> FLZ</div>
+            </Routes>
             <Link to="/home">Home</Link>
-            <Link to="/about">About</Link>
             <Link to="/portfolio">Portfolio</Link>
+
+            <Link to="/about">About</Link>
 
         </nav>
 
 
-            
-        </div>
-        
+                    
     );
 
 }

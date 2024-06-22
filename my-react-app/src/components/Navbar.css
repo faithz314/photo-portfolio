@@ -9,10 +9,11 @@
     flex-direction: row;
     justify-content: flex-end;
     padding: 15px;
+    border: 1px solid black ;
     transition: transform 0.3s ease; /* basically what it sounds like but so slay*/
 }
 
-.navigation a{
+.navigation a{ /*SO INTERESTING: 'Link' is treated as a href in CSS*/
     padding: 20px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color:black;

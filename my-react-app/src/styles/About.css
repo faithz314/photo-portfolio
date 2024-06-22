@@ -1,0 +1,21 @@
+.about-content{
+    position: fixed; /* this sets the bar in the same relative position no matter how the user scrolls */
+    top: 100px; /* top and left set the navbar to top left corner of the window */
+    width: 100%; /* 100% of the viewer of the screen*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    transition: transform 0.3s ease; /* basically what it sounds like but so slay*/
+}
+
+.bio{
+    width: 50%;
+    padding: 30px;
+}
+
+
+.headshot{
+    padding: 50px;
+}
+

@@ -1,11 +1,12 @@
 import React from 'react';
-import './Home.css';
+import '../styles/Home.css';
+import '../images/IMG_2390.jpg'
 
 
 function Home(){
     return(
         
-        <div> Hi! My name is Faith, and I take photos. Welcome to my portfolio page! </div>
+        <div className = "content"> Home page </div>
 
     );
 }
