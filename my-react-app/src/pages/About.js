@@ -1,9 +1,13 @@
 import React from 'react';
 import '../styles/About.css';
 import IMG_2390 from '../images/IMG_2390.jpg'
+import Contact from '../components/Contact.js';
+
 
 function About(){
     return(
+
+        <div>
     <div className= 'about-content'>
         <div className= 'bio'>
         <h2>Hi, my name is Faith. </h2>
@@ -27,9 +31,14 @@ function About(){
             <img src= {IMG_2390} alt= 'headshot' style={{ width: '300px', height: 'auto' }}></img>
         </div>
 
+        <div className = 'box'><Contact></Contact></div>
+
     </div>
 
 
+</div>
+
+        
     );
 }
 

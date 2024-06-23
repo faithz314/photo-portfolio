@@ -1,8 +1,10 @@
 .about-content{
     position: fixed; /* this sets the bar in the same relative position no matter how the user scrolls */
     top: 100px; /* top and left set the navbar to top left corner of the window */
+    left: 0px;
     width: 100%; /* 100% of the viewer of the screen*/
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     padding: 15px;
@@ -18,4 +20,5 @@
 .headshot{
     padding: 50px;
 }
+
 

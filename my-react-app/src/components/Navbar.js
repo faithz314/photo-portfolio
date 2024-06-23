@@ -18,16 +18,15 @@ function Navbar(props){
     return(
         <nav className = "navigation">
 
-            <div className= "initials"> FLZ</div>
+            <a href = "/" class= "initials"> FLZ</a>
 
             <Routes>
-                <Route path= '/home' element= {<Home/>}/>
+                <Route path= '/' element= {<Home/>}/>
                 <Route path= '/portfolio' element= {<Portfolio/>}/>
-
                 <Route path= '/about' element= {<About/>}/>
 
             </Routes>
-            <Link to="/home">Home</Link>
+            <Link to="/">Home</Link>
             <Link to="/portfolio">Portfolio</Link>
 
             <Link to="/about">About</Link>

@@ -1,8 +1,9 @@
 import React from 'react'
+import '../styles/Portfolio.css';
 
 function Portfolio(){
     return(
-        <div>portrait page </div>
+        <div className= "scroll">portrait page </div>
 
     )
 
