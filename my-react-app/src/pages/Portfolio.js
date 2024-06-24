@@ -6,7 +6,7 @@ import Aden from '../images/Portraits/DSC_5441.jpg'
 function Portfolio(){
     return(
         <div>
-        <div className= "scroll" style ={{width: '100%'}}>
+        <div className= "scroll" style ={{width: '100%', height:'1000px'}}>
 
             
             <h1> MY PORTFOLIO </h1>
