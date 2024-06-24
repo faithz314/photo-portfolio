@@ -7,10 +7,10 @@ import Contact from '../components/Contact.js';
 function About(){
     return(
 
-        <div>
+    <div className= 'about'>
     <div className= 'about-content'>
         <div className= 'bio'>
-        <h2>Hi, my name is Faith. </h2>
+        <h2>HI, MY NAME IS FAITH. </h2>
             <p> I'm a portrait + event photographer based in Houston, TX. I discovered
                 photography my first semester of college and found an awesome
                 photographer community at the same time. I have been taking photos
