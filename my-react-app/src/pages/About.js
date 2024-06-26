@@ -7,7 +7,7 @@ import Contact from '../components/Contact.js';
 function About(){
     return(
 
-    <div className= 'about'>
+    <div className= 'about-page'>
     <div className= 'about-content'>
         <div className= 'bio'>
         <h2>HI, MY NAME IS FAITH. </h2>
@@ -34,8 +34,6 @@ function About(){
         <div className = 'box'><Contact></Contact></div>
 
     </div>
-
-
 </div>
 
         

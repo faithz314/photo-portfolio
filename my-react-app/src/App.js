@@ -6,6 +6,7 @@ import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Portfolio from './pages/Portfolio.js';
 import Navbar from './components/Navbar.js';
+import Footer from './components/Footer.js';
 
 function App() {
   // let component //let is a varibale declariotn
@@ -27,7 +28,10 @@ function App() {
 
   
   return (
+    <div>
     <Navbar></Navbar>
+    <Footer></Footer>
+    </div>
   );
 }
 

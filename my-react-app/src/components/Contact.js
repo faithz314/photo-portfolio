@@ -8,15 +8,10 @@ function Contact(){
 
     <div className = 'contact'> 
 
-        <p>Contact Me! </p>
-
-        <div> </div>
-
-
-
-
-
-
+        <h2>Contact Me! </h2>
+        <input type= 'text' placeholder= 'Name'></input>
+        <input type= 'text' placeholder= 'Email'></input>
+        <input type= 'text' placeholder= 'Inquiry'></input>
 
     </div>
     );

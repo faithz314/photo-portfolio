@@ -1,11 +1,3 @@
-.about{
-  width: 100%;
-  height: 100vh;
-  overflow-y: auto; /* Enable vertical scrollbar */
-  color: red;
-
-}
-
 
 .about-content{
     position: fixed; /* this sets the bar in the same relative position no matter how the user scrolls */
@@ -13,16 +5,25 @@
     left: 0px;
     width: 100%; /* 100% of the viewer of the screen*/
     height: 100%;
+    overflow-x:auto;
+    overflow-y: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    padding: 15px;
+    padding: 5px;
     transition: transform 0.3s ease; /* basically what it sounds like but so slay*/
-
+    border: 10px;
+    border-color: red;
 }
 
-.bio{
+h2{
+    color: slateblue;
+}
+
+
+
+.bio {
     width: 50%;
     padding: 30px;
 }
@@ -31,5 +32,4 @@
 .headshot{
     padding: 50px;
 }
-
 
