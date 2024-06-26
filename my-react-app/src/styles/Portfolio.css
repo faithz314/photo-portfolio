@@ -16,3 +16,41 @@
 
 }
 
+.title{
+    width: 100%;
+    height: 100px;
+    line-height: 0.1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 100px;
+    line-height: 0.001;
+    
+}
+
+#item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff0000;
+    margin: 20px;
+
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+

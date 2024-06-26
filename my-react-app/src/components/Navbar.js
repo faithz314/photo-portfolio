@@ -1,19 +1,26 @@
 import React from 'react';
 import './Navbar.css';
-import {Router, Link, Routes, Route} from 'react-router-dom';
+import {Link, Routes, Route} from 'react-router-dom';
 import About from '../pages/About'
 import Portfolio from '../pages/Portfolio'
 import Home from '../pages/Home'
+import Portraits from '../pages/Portraits'
+import {useState} from 'react';
 
 
-function Navbar(props){
-    // const [DropDown, setDropDown] = useState(false);
+const Navbar = () => {
 
-    // const toggleDropDown = () => {
-    //     setDropDown(!DropDown);
-    // }
+    const [isOpen, setIsOpen] = useState(false);
 
-    //CONST = var prefix!!!
+    const handleMouseEnter = () => {
+        setIsOpen(true);
+    }
+
+    const handleMouseLeave = () => {
+        setIsOpen(false);
+    }
+
+
 
     return(
         <nav className = "navigation">
@@ -24,12 +31,32 @@ function Navbar(props){
                 <Route path= '/' element= {<Home/>}/>
                 <Route path= '/portfolio' element= {<Portfolio/>}/>
                 <Route path= '/about' element= {<About/>}/>
-
+                <Route path = '/portraits' element = {<Portraits/>}/>
+                
             </Routes>
+
+
+
             <Link to="/">Home</Link>
-            <Link to="/portfolio">Portfolio</Link>
+
+            <Link to="/portfolio" onMouseEnter= {handleMouseEnter} onMouseLeave= {handleMouseLeave}>Portfolio</Link>
 
             <Link to="/about">About</Link>
+
+
+            {isOpen && (
+                <ul className= 'dropmenu' onMouseEnter= {handleMouseEnter} onMouseLeave= {handleMouseLeave}>
+                    
+                    <Link to = '/portraits'> Portraits </Link>
+                    <Link to = '/events'> Events </Link>
+                    <Link to = '/published'> Published </Link>
+                    <Link to = '/collections'> Collections </Link>
+                </ul>
+            )}
+
+
+
+
 
         </nav>
 

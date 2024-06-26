@@ -16,12 +16,11 @@ function About(){
                 photographer community at the same time. I have been taking photos
                 ever since! I find that although folks don't always love getting their pictures
                 taken, they tend to find joy in the final result, nonetheless.
-            </p>
-            <p>
+                <br></br><br></br>
                 I love to shoot people, events, cosplays (?? please !!), and other happenings around
-                my community. 
-            </p>
-            <p>
+                my community. (Fun fact: I even built this website myself!)
+                <br></br><br></br>
+
                 You can reach me at fz28@rice.edu for any business inquiries or contact me in the box 
                 down below!
             </p>
