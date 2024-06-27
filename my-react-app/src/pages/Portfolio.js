@@ -1,6 +1,9 @@
 import React from 'react'
 import '../styles/Portfolio.css';
 import Aden from '../images/Portraits/DSC_5441.jpg'
+import Singer from '../images/Events/DSC_7271.jpg';
+import Group from '../images/Groups/180-Officers.jpg';
+
 import {Router, Link, Routes, Route} from 'react-router-dom';
 
 
@@ -22,26 +25,25 @@ function Portfolio(){
                     <img src= {Aden} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
                 </Link>
             </div>
-             
 
             <div id= 'item'>
                 <h1> EVENTS </h1>
                 <Link to = '/events'>
-                    <img src= {Aden} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
+                    <img src= {Singer} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
                 </Link>
             </div>
 
+
             <div id= 'item'>
-                <h1> PUBLISHED </h1>
+                <h1> GROUPS/PUBLISHED </h1>
                 <Link to = '/published'>
-                    <img src= {Aden} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
+                    <img src= {Group} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
                 </Link>           
             </div>
 
-
             <div id= 'item'>
             
-                <h1> COLLECTIONS </h1>
+                <h1> PHOTO COLLECTIONS </h1>
                 <Link to = '/collections'>
                     <img src= {Aden} alt= 'aden headshot'style={{ width: '400px', height: 'auto' }}></img>
                 </Link>
