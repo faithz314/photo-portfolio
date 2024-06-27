@@ -1,11 +1,17 @@
 import '../styles/Portraits.css'
 import React, {useState} from 'react';
+import Rosa from '../images/Portraits/rosa-headshot.jpg'
 
 
 
 
-
-function Portraits({pics}){ //pics serve as props
+function Portraits(){ //pics serve as props here ONLY if called in APP
+    const pics  = [
+        Rosa,
+        'https://snworksceo.imgix.net/rce/2e05e61a-e714-4bb7-b71a-6a94f9985443.sized-1000x1000.jpg?w=800',
+        'https://via.placeholder.com/600x300?text=Image+3',
+        'https://via.placeholder.com/600x300?text=Image+4',
+      ];  
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -25,12 +31,13 @@ function Portraits({pics}){ //pics serve as props
 
 
             <div className= 'carousel'>
-                <img src= {pics[0]} alt= 'image carousel' className= 'each-image'></img>
-                <div className= 'button'>
+            <div className= 'button'>
                     <button onClick= {prevImage}>Previous</button>
-                    <button onClick= {nextImage}>Mext</button>
+                    <button onClick= {nextImage}>Next</button>
 
                 </div>
+                <img src= {pics[currentIndex]} alt= 'carousel' className= 'each-image' style={{width: 'auto', height: '500px'}}></img>
+                
 
             </div>
 
