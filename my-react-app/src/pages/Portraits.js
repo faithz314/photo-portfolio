@@ -1,5 +1,7 @@
 import '../styles/Portraits.css'
 import React, {useState} from 'react';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import Rosa from '../images/Portraits/rosa-headshot.jpg'
 
 
@@ -31,14 +33,30 @@ function Portraits(){ //pics serve as props here ONLY if called in APP
 
 
             <div className= 'carousel'>
-            <div className= 'button'>
-                    <button onClick= {prevImage}>Previous</button>
-                    <button onClick= {nextImage}>Next</button>
+            <div id= 'button1'>
+                    <button onClick= {prevImage}>
+                        PREVIOUS
+                    </button>
 
-                </div>
-                <img src= {pics[currentIndex]} alt= 'carousel' className= 'each-image' style={{width: 'auto', height: '500px'}}></img>
+            </div>
+
+            <div id= 'button2'>
+            <button onClick= {nextImage}> 
+                        NEXT 
+                    </button>
+
+            </div>
+
+          
+
+
+                <img src= {pics[currentIndex]} 
+                alt= 'carousel' 
+                className= 'each-image' 
+                style={{width: 'auto', height: '500px'}}
+                onClick= {nextImage}></img>
                 
-
+                
             </div>
 
 

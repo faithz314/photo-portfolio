@@ -3,7 +3,6 @@ import './Navbar.css';
 import {Link, Routes, Route} from 'react-router-dom';
 import About from '../pages/About'
 import Portfolio from '../pages/Portfolio'
-import Home from '../pages/Home'
 import Portraits from '../pages/Portraits'
 import {useState} from 'react';
 
@@ -28,8 +27,7 @@ const Navbar = () => {
             <a href = "/" class= "initials"> FLZ</a>
 
             <Routes>
-                <Route path= '/' element= {<Home/>}/>
-                <Route path= '/portfolio' element= {<Portfolio/>}/>
+                <Route path= '/' element= {<Portfolio/>}/>
                 <Route path= '/about' element= {<About/>}/>
                 <Route path = '/portraits' element = {<Portraits/>}/>
                 
@@ -37,9 +35,8 @@ const Navbar = () => {
 
 
 
-            <Link to="/">Home</Link>
 
-            <Link to="/portfolio" onMouseEnter= {handleMouseEnter} onMouseLeave= {handleMouseLeave}>Portfolio</Link>
+            <Link to="/" onMouseEnter= {handleMouseEnter} onMouseLeave= {handleMouseLeave}>Portfolio</Link>
 
             <Link to="/about">About</Link>
 
